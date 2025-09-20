@@ -1,49 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta name="description" content="Welcome to my portfolio website. Learn more about me, my projects, and how to contact me.">
-   <meta name="keywords" content="portfolio, web development, projects, contact">
-   <meta name="author" content="Jonathan Haynes">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-
-   <title>Welcome to My Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage with Projects</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Header -->
-   <header>
-      <h1>Welcome to My Homepage!</h1>
-      <nav>
-         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-         </ul>
-      </nav>
-   </header>
 
-   <!-- Main Content -->
-   <main>
-      <section id="about">
-         <h2>About Me</h2>
-         <p>Hello! I’m learning web development and building projects to showcase my skills. This site is part of my GitHub Pages portfolio.</p>
-      </section>
+<header>
+  My Portfolio Homepage
+</header>
 
-      <section id="projects">
-         <h2>Projects</h2>
-         <p>Here you’ll find examples of my coding projects, assignments, and experiments as I continue to grow as a developer.</p>
-      </section>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-      <section id="contact">
-         <h2>Contact</h2>
-         <p>If you’d like to get in touch, please reach out via my GitHub profile or email me directly.</p>
-      </section>
-   </main>
+<section id="projects">
+  <h2>My Projects</h2>
 
-   <!-- Footer -->
-   <footer>
-      <p>&copy; 2025 Jonathan Haynes &mdash; Built with ❤️ and GitHub Pages</p>
-   </footer>
+  <table>
+    <caption>Sample Projects Overview</caption>
+    <colgroup>
+      <col style="background-color: #f0f4f8;">
+      <col>
+      <col style="background-color: #f0f4f8;">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Description</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Project One</td>
+        <td>A sample project showcasing HTML and CSS basics.</td>
+        <td><img src="https://via.placeholder.com/100" alt="Project One"></td>
+      </tr>
+      <tr>
+        <td>Project Two</td>
+        <td>A web project demonstrating table and section styling.</td>
+        <td><img src="https://via.placeholder.com/100" alt="Project Two"></td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">End of Projects</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<footer>
+  &copy; 2025 My Portfolio
+</footer>
+
 </body>
 </html>
