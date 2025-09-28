@@ -2,43 +2,74 @@
 SDC 260 Project
 # Portfolio Homepage Project
 
-## 📌 Project Overview
-This project is a sample **homepage** that displays a navigation menu, styled content sections, and a **projects table** with two sample projects.  
-It demonstrates the use of **HTML structure** and **CSS styling** techniques such as transitions, hover effects, and table formatting.
+
+
+---
+# 🌐 Portfolio Homepage with Contact Form
+
+This project is a responsive portfolio homepage built with **HTML5** and **CSS3**, featuring a navigation menu, a project showcase table, and a fully functional contact form.  
+The page is designed to be **accessible, mobile-friendly**, and uses **Flexbox** and **media queries** for modern responsive layouts.
 
 ---
 
-## 🏗️ Features
-- **Header & Navigation**
-  - Navigation menu with hover transitions.
-  - Responsive design using flex layout.
+## 🧭 **Features**
 
-- **Main Content**
-  - Section cards with background, box-shadow, and hover zoom effect.
-  - Two sample projects displayed inside a styled table.
-
-- **Projects Table**
-  - Includes `<caption>`, `<colgroup>`, `<thead>`, `<tbody>`, and `<tfoot>`.
-  - Columns 1 and 3 styled with a background color.
-  - Borders, padding, and full width applied for readability.
-
-- **Interactivity**
-  - Navigation link hover effect with smooth color transition.
-  - Section hover scaling effect (`transform: scale`).
-  - Project images zoom in slightly on hover.
-
-- **Footer**
-  - Styled footer with background color and centered text.
+- ✅ **Responsive Navigation Bar** using Flexbox  
+- 📝 **Projects Table** with semantic HTML elements (`table`, `caption`, `thead`, `tbody`, `tfoot`)  
+- 📬 **Contact Form** with accessible labels and required fields  
+- ✨ Smooth **focus and hover effects** for interactive UI  
+- 📱 **Responsive design** for mobile, tablet, and desktop screens
 
 ---
 
-## 🖼️ Preview
-The homepage includes:
-1. **Header** with site title.
-2. **Navigation bar** with three links.
-3. **Projects section** featuring a table with two sample projects.
-4. **Footer** with copyright.
+## 🧰 **Technologies Used**
+
+- **HTML5** — Semantic structure for content and layout  
+- **CSS3** — Styling, Flexbox layout, transitions, and media queries  
+- **GitHub Pages** — Optional hosting platform
 
 ---
 
-## 📂 File Structure
+## 📝 **Form Fields**
+
+The contact form includes:
+- **Name** (text, required)  
+- **Email** (email, required)  
+- **Subject** (text)  
+- **Message** (textarea, 5 rows)  
+- **Submit** button
+
+Each field is paired with a `<label>` to ensure accessibility and good UX.
+
+---
+
+## 🧍 **Accessibility & UX**
+
+- Uses `<label>` elements for all inputs.  
+- Uses `required` attributes for essential fields.  
+- Uses focus states and transitions to provide feedback.
+
+---
+
+## 📐 **Responsive Design**
+
+| Device | Layout |
+|--------|--------|
+| 📱 **Mobile** | Vertical stacking |
+| 💻 **Tablet** | Two-column layout |
+| 🖥 **Desktop** | Centered layout with max width |
+
+The layout is controlled through **CSS Flexbox** and the following breakpoints:
+- Tablet: `min-width: 700px`
+- Desktop: `min-width: 1024px`
+
+---
+
+## 🚀 **Getting Started**
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/your-username/portfolio-homepage.git
+   cd portfolio-homepage
+
+
