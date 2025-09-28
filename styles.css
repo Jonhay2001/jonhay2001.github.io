@@ -1,104 +1,145 @@
+
+/* =============== GLOBAL STYLES =============== */
 body {
-  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
-  font-family: Arial, Helvetica, sans-serif; 
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fafafa;
 }
 
 header {
-  text-align: center; 
-  font-size: 2em;     
-  font-weight: bold;  
-  padding: 20px;      
-  background-color: #334e68; 
-  color: #ffffff;     
-}
-
-nav ul {
-  list-style-type: none;  
-  margin: 0;
-  padding: 0;
-  display: flex;          
-  justify-content: center;
-  background-color: #486581;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;  
+  background-color: #333;
   color: white;
-  padding: 10px 15px;
-  display: inline-block;
-  transition: background-color 0.3s, color 0.3s; /* smooth hover */
+  text-align: center;
+  padding: 1rem;
 }
 
-/* Hover effect */
-nav ul li a:hover {
-  background-color: #fff;
-  color: #334e68;
-  border-radius: 5px;
+/* =============== NAVIGATION FLEXBOX =============== */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  background-color: #444;
+  padding: 0.5rem;
+  margin: 0;
 }
 
-section {
-  margin: 20px;      
-  padding: 20px;          
-  background-color: #fefefe;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out; /* smooth zoom */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
-section:hover {
-  transform: scale(1.02);
+nav a:hover {
+  background-color: #666;
+  border-radius: 4px;
 }
 
-/* Table styling */
-table {
+/* =============== MAIN FLEXBOX =============== */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* =============== PROJECTS TABLE =============== */
+#projects table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
-caption {
-  font-weight: bold;
-  margin-bottom: 10px;
+#projects th, #projects td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
   text-align: left;
 }
 
-th, td {
+#projects caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* =============== CONTACT FORM FLEXBOX =============== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
   border: 1px solid #ccc;
-  padding: 12px;
-  text-align: center;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* ✅ required */
 }
 
-thead {
-  background-color: #486581;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* =============== SUBMIT BUTTON STYLING =============== */
+.contact-form input[type="submit"] {
+  background-color: #0077cc;
   color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* ✅ required */
 }
 
-tfoot {
-  font-style: italic;
-  text-align: center;
+.contact-form input[type="submit"]:hover {
+  background-color: #005fa3;
 }
 
-img {
-  max-width: 100px;
-  transition: transform 0.3s ease-in-out;
+/* =============== RESPONSIVE DESIGN =============== */
+
+/* 📱 Mobile (default): stacked layout */
+
+/* 💻 Tablet */
+@media (min-width: 700px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #projects, #contact {
+    flex: 1;
+  }
+
+  #projects {
+    margin-right: 2rem;
+  }
 }
 
-img:hover {
-  transform: scale(1.1); /* zoom effect for images */
+/* 🖥️ Desktop */
+@media (min-width: 1024px) {
+  .main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 }
 
+/* =============== FOOTER =============== */
 footer {
-  text-align: center;     
-  font-size: 0.9em;       
-  padding: 15px;
-  background-color: #334e68; 
-  color: #ffffff;           
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
-
